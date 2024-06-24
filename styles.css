@@ -1,0 +1,250 @@
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background: #111;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #222;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    animation: slide-down 1s ease-in-out;
+}
+
+@keyframes slide-down {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #72d4f8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #72d4f8;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('your-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    animation: fade-in 1.5s forwards;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transform: translateY(20px);
+    animation: slide-up 1s ease-in-out forwards;
+}
+
+@keyframes slide-up {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #72d4f8;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #72d4f8;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #5aabb8;
+    transform: scale(1.05);
+}
+
+/* Shop Section */
+.shop {
+    padding: 50px 20px;
+    text-align: center;
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.shop h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #72d4f8;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    margin: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Discord Section */
+.discord {
+    padding: 50px 20px;
+    text-align: center;
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.discord h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #72d4f8;
+}
+
+.discord-invite {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #7289da;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.discord-invite:hover {
+    background-color: #5a6cb2;
+    transform: scale(1.05);
+}
+
+/* Terms of Service Section */
+.tos {
+    padding: 50px 20px;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.tos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #72d4f8;
+}
+
+.terms {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.terms p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.terms strong {
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px 50px;
+    background-color: #222;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #72d4f8;
+}
+
+.social-icons a {
+    color: #72d4f8;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #5aabb8;
+}
